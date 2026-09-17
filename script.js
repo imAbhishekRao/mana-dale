@@ -61,22 +61,8 @@
   const floorPlans = [
     {
       type: "3 BHK",
-      area: "1590 Sq. Ft.",
+      area: "1482 Sq. Ft.",
       price: "₹ 1.63 Cr*",
-      image: "assets/floor-plans/floorplan.webp",
-      download: null
-    },
-    {
-      type: "3 BHK",
-      area: "1600 Sq. Ft.",
-      price: "₹ 1.66 Cr*",
-      image: "assets/floor-plans/floorplan.webp",
-      download: null
-    },
-    {
-      type: "3 BHK",
-      area: "1786 Sq. Ft.",
-      price: "₹ 1.85 Cr*",
       image: "assets/floor-plans/floorplan.webp",
       download: null
     },

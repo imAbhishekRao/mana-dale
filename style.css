@@ -489,7 +489,6 @@ input {
 }
 
 .lead-form input[type="text"],
-.lead-form input[type="email"],
 .lead-form input[type="tel"] {
   width: 100%;
   border: 0;
@@ -707,16 +706,6 @@ input {
   font-size: 12.5px;
   color: #666;
   line-height: 1.55;
-}
-
-.site-footer a {
-  color: var(--navy);
-  text-decoration: underline;
-}
-
-.footer-note {
-  margin-top: 8px;
-  color: #888;
 }
 
 /* ========== FLOATING WIDGETS ========== */
@@ -2395,145 +2384,7 @@ input {
   }
 }
 
-/* ========== MANA DALE BROCHURE (after virtual tour) ========== */
-.mana-dale-brochure {
-  margin-right: var(--sidebar-w);
-  padding: 45px 40px;
-  background: #fff;
-  border-top: 1px solid #eee;
-}
-
-.mana-dale-brochure__inner {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
-.mana-dale-brochure__heading {
-  margin: 0 0 26px;
-  color: var(--navy);
-  font-family: var(--font);
-  font-size: 30px;
-  font-weight: 800;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-}
-
-.mana-dale-brochure__grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(240px, 0.9fr);
-  gap: 28px;
-  align-items: center;
-}
-
-.mana-dale-brochure__lead {
-  margin: 0;
-  color: #333;
-  font-family: var(--font);
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-.mana-dale-brochure__note {
-  margin: 12px 0 0;
-  color: #555;
-  font-family: var(--font);
-  font-size: 14.5px;
-  line-height: 1.55;
-}
-
-.mana-dale-brochure__actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.mana-dale-brochure__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  padding: 10px 22px;
-  border-radius: 4px;
-  font-family: var(--font);
-  font-size: 14.5px;
-  font-weight: 700;
-  transition: filter 0.15s ease;
-}
-
-.mana-dale-brochure__btn:hover {
-  filter: brightness(1.06);
-}
-
-.mana-dale-brochure__btn--primary {
-  background: linear-gradient(180deg, #9a5820 0%, var(--dark-brown) 50%, #5a300c 100%);
-  color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
-}
-
-.mana-dale-brochure__btn--secondary {
-  background: linear-gradient(180deg, #3a4f6a 0%, var(--navy) 45%, #0f2438 100%);
-  color: #fff;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
-}
-
-.mana-dale-brochure__visual {
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  overflow: hidden;
-  background: var(--light-gray);
-}
-
-.mana-dale-brochure__visual img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.mana-dale-brochure__explore {
-  margin-top: 32px;
-  padding-top: 24px;
-  border-top: 1px solid #eee;
-}
-
-.mana-dale-brochure__explore-heading {
-  margin: 0 0 14px;
-  color: var(--navy);
-  font-family: var(--font);
-  font-size: 20px;
-  font-weight: 800;
-}
-
-.mana-dale-brochure__explore-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.mana-dale-brochure__explore-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 42px;
-  padding: 8px 18px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
-  background: #fff;
-  color: var(--navy);
-  font-family: var(--font);
-  font-size: 14px;
-  font-weight: 700;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
-
-.mana-dale-brochure__explore-link:hover {
-  border-color: var(--brown);
-  background: #faf6f1;
-}
-
-/* ========== MANA DALE OVERVIEW / FAQ (after brochure) ========== */
+/* ========== MANA DALE OVERVIEW / FAQ ========== */
 .mana-dale-overview {
   margin-right: var(--sidebar-w);
   padding: 45px 40px 56px;
@@ -2683,46 +2534,28 @@ input {
 }
 
 @media (max-width: 1024px) {
-  .mana-dale-brochure,
   .mana-dale-overview {
     padding: 36px 24px;
   }
 
-  .mana-dale-brochure__heading,
   .mana-dale-overview__heading {
     font-size: 26px;
-  }
-
-  .mana-dale-brochure__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .mana-dale-brochure,
   .mana-dale-overview {
     margin-right: 0;
     padding: 30px 16px;
   }
 
-  .mana-dale-brochure__heading,
   .mana-dale-overview__heading {
     font-size: 23px;
   }
 
-  .mana-dale-brochure__grid,
   .mana-dale-overview__list,
   .mana-dale-overview__why-grid {
     grid-template-columns: 1fr;
-  }
-
-  .mana-dale-brochure__actions {
-    flex-direction: column;
-  }
-
-  .mana-dale-brochure__btn {
-    width: 100%;
   }
 
   .mana-dale-overview__subheading {
@@ -2731,7 +2564,6 @@ input {
 }
 
 @media (max-width: 480px) {
-  .mana-dale-brochure__heading,
   .mana-dale-overview__heading {
     font-size: 22px;
   }
